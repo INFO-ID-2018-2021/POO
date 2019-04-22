@@ -1,25 +1,16 @@
 // Problema 1.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
-
 #include <iostream>
-#include "Fractie.h"
-#include "Problema 1.h"
+#include "Rational.h"
 
 int main()
 {
 	try {
-		std::cout << "Hello World!\n";
-		Fractie<int> f = Fractie<int>::Fractie(2, 4);
-		Fractie<int> g = Fractie<int>::Fractie(6, 3);
-		Fractie<int> h = Fractie<int>::Fractie();
-		f.print();
-		g.print();
-		h = f + g;
-		h.print();
-		f = g - h;
-		f.print();
-		h = (int)5;
+		Rational<int> f = Rational<int>(2, 3);
+		Rational<int> g = Rational<int>(2);
+		Rational<int> h = f / g;
+		std::cout << h;
 	}
 	catch (std::invalid_argument exception) {
 		std::cout << "Numitorul nu poate fi 0";

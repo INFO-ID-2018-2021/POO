@@ -23,10 +23,7 @@
     <Text Include="Cerinta.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Fractie.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Problema 1.h">
+    <ClInclude Include="Rational.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
